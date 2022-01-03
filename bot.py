@@ -16,13 +16,13 @@ Bot = Client(Config.SESSION_NAME, bot_token=Config.BOT_TOKEN, api_id=Config.API_
 @Bot.on_message(filters.command("start"))
 async def start_handler(_, cmd):
     await cmd.reply_text(
-        "HI, I am Cloud Uploads Manager Bot!\n\nI can Do a Lot of Things, Check > /help <",
+        "HI, I am StreamTabe Uploader Bot!\n\nI can Do a Lot of Things, Check > /help <",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"),
-                 InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Bot's Source Code", url="https://github.com/AbirHasan2005/Cloud-UPManager-Bot")]
+                [InlineKeyboardButton("Owner", url="https://t.me/riyad48"),
+                 InlineKeyboardButton("Facebook", url="https://fb.me/riyad48")],
+                [InlineKeyboardButton("Log Channel", url="https://t.me/r1yadleech")],
+                [InlineKeyboardButton("MirrorMania", url="https://t.me/")]
             ]
         )
     )
