@@ -16,13 +16,13 @@ Bot = Client(Config.SESSION_NAME, bot_token=Config.BOT_TOKEN, api_id=Config.API_
 @Bot.on_message(filters.command("start"))
 async def start_handler(_, cmd):
     await cmd.reply_text(
-        "HI, I am StreamTabe Uploader Bot!\n\nI can Do a Lot of Things, Check > /help <",
+        "HI, I am StreamTabe Uploader Bot!\n\nI can Do a Lot of Things,Send a file to start.For more Check > /help <",
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("Owner", url="https://t.me/riyad48"),
                  InlineKeyboardButton("Facebook", url="https://fb.me/riyad48")],
                 [InlineKeyboardButton("Log Channel", url="https://t.me/r1yadleech")],
-                [InlineKeyboardButton("MirrorMania", url="https://t.me/")]
+                [InlineKeyboardButton("MirrorMania", url="https://t.me/+eeAi32rtwAwwOWE1")]
             ]
         )
     )
@@ -36,8 +36,8 @@ async def help_handler(_, cmd):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                 InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")],
+                [InlineKeyboardButton("Mirror Group", url="https://t.me/+eeAi32rtwAwwOWE1"),
+                 InlineKeyboardButton("Owner", url="https://t.me/riyad48")],
                 [InlineKeyboardButton("Delete GoFile.io File", switch_inline_query_current_chat="!godel ")],
                 [InlineKeyboardButton("Delete Streamtape File (Admin Only)",
                                       switch_inline_query_current_chat="!stdel ")],
@@ -83,8 +83,8 @@ async def answer(bot, query: InlineQuery):
                 thumb_url="https://i.imgur.com/6jZsMYG.png",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                         InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")],
+                        [InlineKeyboardButton("Support Group", url="https://t.me/+eeAi32rtwAwwOWE1"),
+                         InlineKeyboardButton("Developer", url="https://t.me/riyad48")],
                         [InlineKeyboardButton("Delete GoFile.io File", switch_inline_query_current_chat="!godel ")],
                         [InlineKeyboardButton("Delete Streamtape File (Admin Only)",
                                               switch_inline_query_current_chat="!stdel ")],
@@ -119,8 +119,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("Support Group", url="https://t.me/+eeAi32rtwAwwOWE1")],
+                            [InlineKeyboardButton("Developer", url="https://t.me/riyad48")]
                         ]
                     )
                 )
@@ -292,7 +292,7 @@ async def answer(bot, query: InlineQuery):
                                          input_message_content=InputTextMessageContent(
                                              message_text=f"Something Went Wrong!\n\n**Error:** `{err}`"),
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]))
+                                             [[InlineKeyboardButton("Support Group", url="https://t.me/+eeAi32rtwAwwOWE1")]]))
             )
 
         try:
@@ -318,8 +318,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("Support Group", url="https://t.me/riyad48")],
+                            [InlineKeyboardButton("Developer", url="https://t.me/+eeAi32rtwAwwOWE1")]
                         ]
                     )
                 )
@@ -412,8 +412,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("Support Group", url="https://t.me/riyad48")],
+                            [InlineKeyboardButton("Developer", url="https://t.me/+eeAi32rtwAwwOWE1")]
                         ]
                     )
                 )
@@ -670,7 +670,7 @@ async def button(bot, data: CallbackQuery):
             file_name=dl_loc,
             progress=progress_for_pyrogram,
             progress_args=(
-                "Download kortasi ...",
+                "Downloading to out server...",
                 a,
                 c_time
             )
