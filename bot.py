@@ -720,7 +720,7 @@ async def button(bot, data: CallbackQuery):
             file_name=dl_loc,
             progress=progress_for_pyrogram,
             progress_args=(
-                "Download kortasi ...",
+                "Downloading...",
                 a,
                 c_time
             )
